@@ -6,9 +6,19 @@
 class GroundVehicle():
     def __init__(self, num_wheels):
         self.num_wheels = num_wheels
+        if num_wheels is None:
+            num_wheels = 4
+
 
     # TODO
+    def drive(self):
+        print("vrooom")
 
+    class Motorcycle():
+        def __init__(self, num_wheels):
+            self.num_wheels = 2
+        def drive(self):
+            print("BRAAAP")
 
 # Subclass Motorcycle from GroundVehicle.
 #

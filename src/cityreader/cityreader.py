@@ -20,8 +20,13 @@ def cityreader(cities=[]):
   # TODO Implement the functionality to read from the 'cities.csv' file
   # For each city record, create a new City instance and add it to the 
   # `cities` list
-    
-    return cities
+  class Cities(self, city_name, lat, lon):
+    self.city_name = city_name 
+    self.lat = lat
+    self.lon = lon
+    for city in cities:
+      cities.append [city_name, lat, lon] 
+return cities
 
 cityreader(cities)
 
