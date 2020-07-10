@@ -16,12 +16,31 @@
 # should not be loaded into a City object.
 cities = []
 
+
+improt csv
+
 def cityreader(cities=[]):
   # TODO Implement the functionality to read from the 'cities.csv' file
   # For each city record, create a new City instance and add it to the 
   # `cities` list
+  with open('cities.csv', newline='')as f:
+    city_list = csv.reader(f)
+    for row in city_list:
+      if row  in city_list:
+        city_name = row[0]
+
+        class City(self, name, lat, lon):
+          self.name = name 
+          self.lat = lat
+          self.lon = lon
+
+
+
+
+  reader = cvs.reader(cities.csv)
+  cities = [cities for city in cities]
     
-    return cities
+  return cities
 
 cityreader(cities)
 
